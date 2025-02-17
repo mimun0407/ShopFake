@@ -1,11 +1,14 @@
-package com.example.shopee.Model;
+package com.example.shopee.model;
+
 import lombok.Data;
 
 import java.time.LocalDateTime;
 @Data
-public class Cart {
+public class Order {
     Long id;
     Long userId;
-    String status; // "ACTIVE" | "CHECKED_OUT"
+    Long cartId;
+    int totalPrice;
+    String status;
     LocalDateTime createdAt;
 }
